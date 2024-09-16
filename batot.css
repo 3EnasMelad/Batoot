@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;6007;700&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+html{scroll-behavior: smooth;}
+ body{ 
+    font-family: "Quicksand" ,sans-serif;
+    
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+ul{
+    list-style: none;
+} 
+
+ 
+.primary-text{
+    color: #e4b95b;
+}
+.container{
+    /* background: red; */
+    max-width: 1100px;
+    margin:auto;
+} 
+
+
+
+
+ .btn{
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+}
+.btn-primary{
+    color: white;
+    border: 1px solid white;
+}
+
+
+.btn-secondary{
+    color: #fff;
+    background: #383848;
+    margin-top: 2rem;
+}
+
+.btn-primary:hover ,.btn-secondary:hover{
+    background: #e4b95b;
+}
+
+header{
+    height: 100vh;
+    background: url('./كتكوتى.jpg') center center/cover no-repeat;
+    position:relative;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+}
+
+
+#navbar img{
+    width: 80px;
+    margin-left: 100px;
+
+}
+
+#navbar  ul{
+    display: flex;
+    margin-right: 100px;
+
+}
+
+#navbar  ul li a{
+    padding: 15px 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#navbar  ul li a:hover{
+    border-bottom: 2px solid orange;
+}
+
+header .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    
+     margin-bottom: 5px;
+    
+    align-items: center;
+    /* align-items:flex-start; */
+    /* background: gray; */
+    height:75% ;
+}
+header .content h1{
+    font-size: 40px;
+    color: white;
+}
+header .content p{
+    margin: 20px 0 40px;
+    color: white;
+}
+/* الشفافيه  */
+header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:rgb(0, 0,0,0.6);
+}
+
+header *
+{
+    z-index: 10;
+}
+
+
+#about {
+    background-color: rgb(175, 239, 239);
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+#about .title ,
+#offers .title,
+#menu .title {
+    /* background-color: rgb(175, 239, 239); */
+    text-align: center;
+    margin-bottom: 4rem;
+}
+#about h2   ,
+#offers h2 ,
+#menu h2
+,#gallery h2 { 
+    font-size: 40px;
+   
+    margin-bottom: 20px;
+} 
+
+
+#about h2 ,
+#menu h2{
+    color: #383848;
+    background-color: rgb(175, 239, 239);
+}
+
+
+ #about .title p ,#menu .title  p{ 
+
+font-size: 14px;
+color: #9a9a9a;
+font-weight: 600; 
+background-color: rgb(175, 239, 239);
+}
+#about .title p ,#menu .title  p h3{
+    color: #e560da;
+    background-color: rgb(175, 239, 239);
+}
+
+#about .about-content{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(175, 239, 239);
+    /* background-color: aquamarine; */
+}
+#about .about-content{
+    color: #e560da;
+    background-color: rgb(175, 239, 239);
+}
+
+#about .about-content img{
+    width: 450px;
+    background-color: rgb(175, 239, 239);
+    /* margin-bottom: 5px; */
+}
+#about .about-content p{
+    color: #9a9a9a;
+    margin-right: 7rem;
+    font-weight: 500;
+    line-height: 1.6;
+    background-color: rgb(175, 239, 239);
+} 
+
+#offers{
+    height: 80vh; 
+   display : flex;
+    justify-content: center;
+    background: url("./o.jpg") center center/cover fixed;
+}  
+
+
+#offers h2{
+    color: yellow;
+}
+
+#offers .title p{
+    color: #fff;
+    font-weight: 500;
+}
+
+#offers .offers-item{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+
+#offers .offers-item img{
+    width: 200px;
+}
+
+
+#offers .offers-item h3
+
+{
+    font-size: 25px;
+    margin: 15px 0;
+}
+#offers .offers-item p{
+font-size: 14px;
+padding:0 20px;
+font-weight: 300;
+margin-bottom: 15px;
+}
+
+#offers .offers-item span{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+
+
+#gallery{
+ background-color: #61c3b8 center center/cover no-repeat;
+    padding: 8rem 0 6rem;
+}
+
+#gallery h2{
+    color: #3920f5;
+    text-align:  center;
+}
+
+
+#gallery .img-gallery{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+
+
+}
+#gallery .img-gallery img{
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 20px;
+    opacity: 0.8;
+}
+
+
+#gallery .img-gallery img:hover{
+    opacity: 1;
+}
+
+
+
+
+
+
+/* contact */
+#contact{
+    padding: 5rem 0;
+    background: #f4f4f4;
+}
+#contact .container{
+    max-width: 900px;
+}
+#contact .contact-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+#contact .contact-content .contact-info{
+    width: 50%;
+}
+
+#contact .contact-content .contact-info div{
+    /* فصل كل دييف عن التانى */
+    margin: 30px 0;
+line-height: 1.7;}
+
+#contact .contact-content .contact-info h3{
+    font-size: 28px;
+    color: #383848;
+    margin-bottom: 10px;
+}
+
+#contact .contact-content .contact-info p{
+    color: #9a9a9a;
+}
+
+#contact .contact-content .contact-info i{
+    color:#b6aee8;
+    margin-right: 5px;    
+     /* #المسافه بين الايكون ووصفها */
+
+                 }
+     #contact .contact-content .contact-info a i{
+        color: #fff;
+        background-color: #383848;
+        padding: 15px;
+        border-radius: 50%;
+        font-size: 20px;
+     }
+     #contact .contact-content .contact-info a i:hover{
+        background: #b6aee8;
+        color:#383848;
+     }
+
+
+form
+{
+    width: 50%;
+}
+
+form input, textarea{
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 20px 0;
+    border: none;
+background-color: #b6aee8;
+}
+
+#contact .btn{
+    background: #b6aee8;
+    color: #fff;
+}
+
+
+#contact .btn:hover{
+ background-color: #9a9a9a;
+ cursor: pointer;
+}
+
+
+
+#footer{
+    background: #383848;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 14px;
+   
+}
+
+
+#footer:hover .p b{
+
+
+border-bottom: 2px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
